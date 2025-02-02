@@ -10,11 +10,16 @@
     <h1>Login</h1>
     <form action="/login" method="POST">
       <div class="form-group">
-        <label for="email">Enter your registered email:</label>
+        <label for="email">Email:</label>
         <input type="email" name="email" id="email" required placeholder="yourname@college.edu">
       </div>
-      <button type="submit">Send OTP</button>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" required placeholder="Your password">
+      </div>
+      <button type="submit">Login</button>
     </form>
+    <p>Don't have an account? <a href="{{ url_for('index') }}">Sign up here</a></p>
   </div>
 </body>
 </html>

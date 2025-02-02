@@ -1,4 +1,4 @@
 flask
-flask-Mail
 flask-SQLAlchemy
-python-dotenv      # Optional: to handle environment variables
+python-dotenv   
+Werkzeug
