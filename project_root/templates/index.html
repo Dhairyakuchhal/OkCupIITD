@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Dating Website Signup</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+  <h1>Sign Up</h1>
+  <form action="/register" method="POST">
+    <label for="name">Name:</label>
+    <input type="text" name="name" id="name" required>
+    
+    <label for="age">Age:</label>
+    <input type="number" name="age" id="age" required>
+    
+    <label for="college_year">College Year:</label>
+    <select name="college_year" id="college_year" required>
+       <option value="freshman">Freshman</option>
+       <option value="sophomore">Sophomore</option>
+       <option value="junior">Junior</option>
+       <option value="senior">Senior</option>
+    </select>
+    
+    <label for="email">Kerberos Email:</label>
+    <input type="email" name="email" id="email" required>
+
+    <button type="submit">Register</button>
+  </form>
+</body>
+</html>

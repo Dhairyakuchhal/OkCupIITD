@@ -1,0 +1,4 @@
+Flask
+Flask-Mail
+Flask-SQLAlchemy
+python-dotenv      # Optional: to handle environment variables

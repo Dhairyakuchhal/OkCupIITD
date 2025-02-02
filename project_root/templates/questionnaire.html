@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Questionnaire</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+  <h1>Compatibility Questionnaire</h1>
+  <form action="/submit_questionnaire" method="POST">
+    <!-- Loop or create manually 50 questions -->
+    <div>
+      <label for="q1">Question 1: What is your favorite hobby?</label>
+      <input type="text" name="q1" id="q1" required>
+    </div>
+    <div>
+      <label for="q2">Question 2: Do you prefer indoor or outdoor activities?</label>
+      <select name="q2" id="q2" required>
+        <option value="indoor">Indoor</option>
+        <option value="outdoor">Outdoor</option>
+      </select>
+    </div>
+    <!-- Add remaining questions 3 to 50 in similar fashion -->
+    <input type="hidden" name="user_id" value="{{ user_id }}">
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
